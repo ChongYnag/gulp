@@ -1,0 +1,784 @@
+.tpl-component-2016-01-09-list{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position:relative;
+    margin:0 auto;
+    width: 352px;
+    overflow: hidden;
+}
+.tpl-component-2016-01-09-list-data-hidden-info{
+	display:none;
+}
+.tpl-component-2016-01-09-list .list{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position:relative;
+    width: 100%;
+    /*如若删除底部，需要用js动态清除以下样式*/
+    padding-bottom:29px;
+}
+
+.tpl-component-2016-01-09-list .list ul{
+  min-height: 30px;
+}
+
+.tpl-component-2016-01-09-list .list h1{
+   line-height:29px;
+   height:30px;
+   font-size:15px;
+   font-family:'microsoft yahei';
+   margin:0px;
+    border: 2px solid #A5A9AD;
+
+}
+.tpl-component-2016-01-09-list .list h1 i.title-icon{
+	background: url(../images/icon.png) center center no-repeat;
+    width: 16px;
+    height: 30px;
+    display: none;
+    margin: 0px 0px 0px 6px;
+    }
+.tpl-component-2016-01-09-list .list h1 .leftDiv .title-content{
+	font-family:"microsoft yahei";
+	color:#004276;
+	cursor:pointer;
+	position:relative;
+	display:inline-block; 
+	text-decoration: none;    
+	font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 2px solid #009F87;
+    overflow: hidden;
+}
+.tpl-component-2016-01-09-list .list h1 i.next-icon{
+    /*background:url(../images/next.png) center right no-repeat;*/
+    width: 49px;
+    height: 21px;
+    position: relative;
+    top: 9px;
+    display:none;
+    float:right;
+}
+.tpl-component-2016-01-09-list .list-body ul{
+    overflow: hidden;
+    box-sizing: border-box;
+   }
+.tpl-component-2016-01-09-list .list-body ul li{
+    position:relative;
+    font-size:14px;
+    font-family:'microsoft yahei';
+    color:#666;
+    list-style:none;
+    height:30px;
+    line-height:30px;
+    border: 1px dashed #BEBEBE;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.tpl-component-2016-01-09-list .list-body ul li b{
+  	background:url(../images/dian.png) no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 10px;
+    height: 10px;
+}
+/*.tpl-component-2016-01-09-list .list-body ul li:hover{background-color:#f0f0f0;}*/
+.tpl-component-2016-01-09-list .list-body ul li a{text-decoration: none;display:inline-block;height:30px;line-height:30px;}
+.tpl-component-2016-01-09-list .list-body ul li a.tpl-component-2016-01-09-list-li-title{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 68%;
+      box-sizing: border-box;
+
+  }
+.tpl-component-2016-01-09-list .list-body ul li span.tpl-component-2016-01-09-list-li-time{
+    width: 32%;
+    display: inline-block;
+    text-align: right;
+    box-sizing: border-box;
+    float: right;
+  }
+.tpl-component-2016-01-09-list .list-body ul li i.line-icon{
+  margin:10px 0;
+  display:inline-block;
+   width:10px;
+   height:10px;
+   border:1px solid #08d09a;
+   border-radius: 10px;
+    background-color: #7dcbda;
+  }
+.tpl-component-2016-01-09-list .list-body ul li span.line-content{
+  	display: inline-block;
+  	font-family:"microsoft yahei";
+  	font-size:14px;
+  	color:#656565;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 15px;
+    position:absolute;
+    left:0px;
+  }
+.tpl-component-2016-01-09-list #hover_show,.tpl-component-2016-01-09-list #hover_hide{
+  cursor: pointer;
+  color:#fff;
+  margin-left:10px;
+}
+.tpl-component-2016-01-09-list .list-body ul li span.time-content{
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      position:absolute;
+	  top:0;
+	  right:0;
+  }
+.tpl-component-2016-01-09-list .list-footer{
+   position:absolute;
+   bottom:0px; left:0px;
+    background:url(../images/bottom.png) 0 0 repeat-x;
+    height:29px; width:100%;
+    }
+
+
+.tpl-component-2016-01-09-list.active{border:1px solid #08d09a;}
+.tpl-component-2016-01-09-list.active .icon{opacity: 0.5;}
+.tpl-component-2016-01-09-list.active .icon:hover{opacity: 1;}
+.tpl-component-2016-01-09-list.active .move{ position:absolute; top:0px; left:50%; background:url(../images/move.png) 0 0 no-repeat; width:40px; height:16px; margin-left:-20px; cursor:move;}
+.tpl-component-2016-01-09-list.active .move-close{ z-index:999;position:absolute; top:0px; left:0px; background:url(../images/move-close.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;}
+.tpl-component-2016-01-09-list.active .copy{ position:absolute; top:0px; left:20px; background:url(../images/copy.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+.tpl-component-2016-01-09-list.active .saveblock{ position:absolute; top:0px; left:40px; background:url(../images/saveblock.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+.tpl-component-2016-01-09-list.active .saveInnerStyle{ position:absolute; top:0px; left:60px; background:url(../images/saveinnerstyle.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+
+
+.tpl-component-2016-01-09-list .black-tab-page{list-style: none; color:#ccc;}
+.tpl-component-2016-01-09-list .black-tab-page li{position:relative;margin:5px 0;}
+.tpl-component-2016-01-09-list .black-tab-page li .content{margin:0 10px;}
+.tpl-component-2016-01-09-list .black-tab-page li.active .content .icon{position:absolute;right:10px;}
+.tpl-component-2016-01-09-list .black-tab-page li.active .content .icon .operate{cursor:pointer;color:#ccc;font-size:8px;border:1px solid #222;border-radius: 3px;}
+
+.tpl-tree-sidebar-2016-01-09-list .operate-box .check-holder{float:left;}
+.tpl-tree-sidebar-2016-01-09-list .operate-box .component-checkbox{
+    display: inline-block;
+    background-color: #222;
+    cursor: pointer;
+    margin: 8px 5px 0 12px;
+    position:relative;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .operate-box .checkbox-text{
+  font-family: 'microsoft yahei';
+  font-size: 10px;
+  cursor: pointer;
+  color:#ccc;
+  display:inline-block;
+  height:14px;
+  margin-top: 5px;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .operate-box .two-column.checkbox-text{
+  width:4em;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .operate-box .one-column.checkbox-text{
+  width:12em;
+}
+
+
+.tpl-tree-sidebar-2016-01-09-list .select-component-self.time-format .select-options{
+  height:200px;
+}
+.tpl-tree-sidebar-2016-01-09-list .tree .select-component-self.input .select-options{
+  right:35px;
+}
+
+
+.tpl-component-2016-01-09-list-setting-hidden-area {
+    display:none;
+}
+
+.tpl-component-2016-01-09-list a.active{
+	background:#ccc;
+	color: #222;
+}
+
+.tpl-component-2016-01-09-list .leftDiv{
+	float:left;
+	width:70%;
+	height:100%;
+	
+}
+.tpl-component-2016-01-09-list .rightDiv{
+	float:right;
+	width:28%;
+	height:100%;
+    position: relative;
+}
+.tpl-component-2016-01-09-list .list-body{
+    padding-top: 10px;
+}
+
+.tpl-component-2016-01-09-list-style2{
+    width: 563px;
+}
+
+.tpl-component-2016-01-09-list-style2 .list-body ul li{
+    width: 47.5%;
+    display: inline-block;
+    float: left;
+}
+.tpl-component-2016-01-09-list-style2 .list-body ul li:nth-of-type(2n+1){
+    margin-right: 5%;
+}
+
+.tpl-component-2016-01-09-list-style2.tpl-component-2016-01-09-list .list-body ul li span.time-content{
+    display: none;
+}
+.tpl-component-2016-01-09-list-style2.tpl-component-2016-01-09-list .list-body ul li a.tpl-component-2016-01-09-list-li-title{
+    width: 100%;
+}
+.tpl-component-2016-01-09-list-style3{
+    width: 859px;
+}
+.tpl-component-2016-01-09-list-style3 .list-body ul li{
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+.tpl-component-2016-01-09-list-style3 .list-body ul li:nth-of-type(1){
+    margin-right: 5%;
+}
+.tpl-component-2016-01-09-list-style3 .list-body ul li:nth-of-type(2){
+    margin-right: 5%;
+}
+.tpl-component-2016-01-09-list-style3 .list-body ul li:nth-of-type(4){
+    margin-right: 5%;
+}
+.tpl-component-2016-01-09-list-style3 .list-body ul li:nth-of-type(5){
+    margin-right: 5%;
+}
+.tpl-component-2016-01-09-list-style3.tpl-component-2016-01-09-list .list-body ul li span.time-content{
+    display: none;
+}
+.tpl-component-2016-01-09-list-style3.tpl-component-2016-01-09-list .list-body ul li a.tpl-component-2016-01-09-list-li-title{
+    width: 100%;
+}
+.tpl-component-2016-01-09-list-style4{
+    height: 220px;
+}
+.tpl-component-2016-01-09-list-style4 .list-body ul li{
+    display: inline-block;
+    width: 100%;
+}
+.tpl-component-2016-01-09-list-style4 .rightDiv{
+    position: absolute;
+    top: 190px;
+    right: 0;
+    height: 30px;
+}
+.tpl-tree-sidebar-2016-01-09-list .channel-line{
+    width: 100%;
+    height: 1px;
+    background: #454545;
+    box-shadow: 1px 1px 1px #000;
+    margin: 8px 0;
+}
+.tpl-tree-sidebar-2016-01-09-list .box-line{
+    width: 100%;
+    height: 1px;
+    background: #454545;
+    box-shadow: 1px 1px 1px #000;
+}
+.tpl-tree-sidebar-2016-01-09-list .operate-box1{
+    color: #ccc;
+    font-family: 'microsoft yahei';
+    margin-top: 5px;
+    width: 30%;
+    overflow: hidden;
+    display: inline-block;
+}
+.tpl-tree-sidebar-2016-01-09-list .operate-box1 .checkbox-text {
+    font-family: 'microsoft yahei';
+    font-size: 10px;
+    cursor: pointer;
+    color: #ccc;
+    display: inline-block;
+    height: 14px;
+    margin-top: 5px;
+}
+.tpl-tree-sidebar-2016-01-09-list .operate-box1 .component-checkbox {
+    display: inline-block;
+    background-color: #222;
+    cursor: pointer;
+    margin: 8px 5px 0 12px;
+    position:relative;
+}
+.tpl-tree-sidebar-2016-01-09-list .operate-box1 .check-holder {
+    float: left;
+}
+.tpl-tree-sidebar-2016-01-09-list .channelName{
+	margin-left: 45px;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .channelBtn{
+	width: 85%;
+    border: 1px solid #555;
+    box-shadow: 0px 1px 0px 1px #222;
+    color: #ccc;
+    border-radius: 3px;
+    height: 24px;
+    background: #595959;
+    margin-left:6%;
+    cursor:pointer;
+    position:relative;
+}
+.tpl-tree-sidebar-2016-01-09-list .section h3{
+	position:relative;
+}
+.tpl-tree-sidebar-2016-01-09-list .section h3 b{
+	color: red;
+    position: absolute;
+    top: 3px;
+    left: 110px;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .channelBtn i{
+	color: red;
+    position: absolute;
+    top: 5px;
+    left: 128px;
+}
+.tpl-tree-sidebar-2016-01-09-list .label-style2{
+    margin-left: 88px;
+}
+.tpl-tree-sidebar-2016-01-09-list .black-input1{
+	width:80px;
+	position: absolute;
+    left: 40px;
+    text-align: center;
+    border: 1px solid #555;
+}
+.tpl-tree-sidebar-2016-01-09-list input.black-input2{
+    width: 92px;
+    text-align: center;
+}
+.tpl-tree-sidebar-2016-01-09-list input.black-input3{
+    width: 72px;
+    text-align: center;
+    border: 1px solid #555;
+    margin-left: 30px;
+}
+.tpl-tree-sidebar-2016-01-09-list input.black-input4{
+    width:60px;
+}
+.tpl-tree-sidebar-2016-01-09-list .label-style3{
+    float: none;
+}
+.tpl-tree-sidebar-2016-01-09-list .label-style4{
+    float: left;
+}
+.tpl-tree-sidebar-2016-01-09-list .articleAttr label{color:#ccc;font-family:Arial,Helvetica,黑体;margin-right:10px;margin-left:10px;}
+.tpl-tree-sidebar-2016-01-09-list .articleAttr .component-radio{
+    display:inline-block;
+    width:16px;
+    height: 14px;
+    background: url('../images/cms_btn.png') no-repeat;
+    background-position: -44px 0;
+    cursor: pointer;
+    position:relative;
+    top: 5px;
+}
+.tpl-tree-sidebar-2016-01-09-list #articleType .component-checkbox{
+    width: 16px;
+    height: 14px;
+    background:url("../images/cms_btn.png") no-repeat;
+    background-position: -16px 0;
+}
+.tpl-tree-sidebar-2016-01-09-list .articleAttr .component-radio.active{
+    background-position: -30px 0;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .articleAttr .radio-text{
+	width: 48px;
+    display: inline-block;
+    position:relative;
+    top:2px;
+    margin-right:5px;
+    font-family: 'microsoft yahei';
+    cursor: pointer;
+    color:#ccc;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2{
+	position:relative;
+}
+.tpl-tree-sidebar-2016-01-09-list .radioAll{
+	position:absolute;
+	top:10px;
+}
+.tpl-tree-sidebar-2016-01-09-list .radioAll .component-radio{
+	margin-left:30px;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .lmBtn_block {
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .selectlmLi {
+    margin-top: 10px;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .selectLmImg {
+    background: url(../images/cms_btn.png) 0 0 no-repeat;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .selectLmText {
+    vertical-align: text-bottom;
+    color: #eee;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2  .selectLmImgClose {
+    background: url(../images/deleteCmsColumns.png) 0 0 no-repeat;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .fontRight{
+    margin-right: 70px;
+}
+.tpl-tree-sidebar-2016-01-09-list .setup-box2 .label-right{
+    margin-right: 36px;
+}
+.tpl-tree-sidebar-2016-01-09-list .zoom {
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 1px 0 #222;
+    border: 1px solid #222;
+    display: inline-block;
+    float: left;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .zoom .zoom-button {
+    width: 70px;
+    height: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    left: -30px;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .zoom .zoom-button i {
+    float: left;
+    display: inline-block;
+    height: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .zoom .zoom-button .status {
+    width: 30px;
+    background-color: #222;
+    cursor: pointer;
+    position: relative;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .zoom .zoom-button .close i {
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    box-shadow: 0 0 1px 0 #2bb599;
+    background-color: #2bb559;
+    position: absolute;
+    top: 4px;
+    left: 13.5px;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .zoom .zoom-button .open i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #474747;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 #474747 inset;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .zoom .zoom-button .split {
+    width: 10px;
+    background-color: #474747;
+}
+.tpl-tree-sidebar-2016-01-09-list .treeImgBtn .img-hover-info{
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    width: 24px;
+    background: #343434;
+    text-align: left;
+    height: 20px;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .rightDistance .select-component-self{
+    width: 85px;
+}
+.tpl-tree-sidebar-2016-01-09-list .rightDistance .select-holder{
+    width: 85px;
+}
+.tpl-tree-sidebar-2016-01-09-list .rightDistance .select-component-self .select-holder .select-content{
+    width: 85px;
+}
+.tpl-component-2016-01-09-list .title-more{
+    position: absolute;
+    color: #00A088;
+    text-decoration: none;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "宋体";
+    line-height: 30px
+}
+.tpl-tree-sidebar-2016-01-09-list .treeIcon{
+    position: absolute;
+    left: 132px;
+    top: 50%;
+    margin-top: -8px;
+}
+.tpl-tree-sidebar-2016-01-09-list .moreText{
+    display: none;
+}
+.tpl-tree-sidebar-2016-01-09-list .moreChange{
+    background: url("../images/moreIcon.png") -17px 0px no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.tpl-tree-sidebar-2016-01-09-list .moreCancle{
+    background: url("../images/moreIcon.png") -33px -0px no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.tpl-tree-sidebar-2016-01-09-list #tpl-component-2016-01-09-list-changeTime{
+    top:-187px;
+}
+.tpl-tree-sidebar-2016-01-09-list .treeDataListTmplIcon{
+    width: 57px;
+    height: 22px;
+    border: 1px solid #000;
+    background: #ffffff;
+    display: inline-block;
+}
+.tpl-tree-sidebar-2016-01-09-list .leftArea{
+    width: 49px;
+    height: 100%;
+    float: left;
+}
+.tpl-tree-sidebar-2016-01-09-list .leftArea span{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #929292;
+    font-size: 12px;
+    font-family: "宋体";
+    display: inline-block;
+    line-height: 22px;
+}
+.tpl-tree-sidebar-2016-01-09-list .rightArea{
+    position: relative;
+    width: 7px;
+    height: 100%;
+    background: #3D3D3D;
+    border-left: 1px solid #000;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+}
+.tpl-tree-sidebar-2016-01-09-list .rightArea .downIcon{
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    background: url(../images/downsanjiao.png);
+    left: 50%;
+    margin-left: -2.5px;
+    top: 50%;
+    margin-top: -1.5px;
+}
+.tpl-tree-sidebar-2016-01-09-list .treeSelectIcon{
+    width: 90px;
+    min-height: 135px;
+    max-height: 136px;
+    border: 1px solid #7A7A7A;
+    position: absolute;
+    background: #fff;
+    top: -132px;
+    left: 71px;
+   overflow: hidden;
+    display: none;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .treeSelectIcon ul li{
+    width: 90px;
+    height: 30px;
+}
+.tpl-tree-sidebar-2016-01-09-list .treeSelectIcon ul li.noIcon{
+    height: 21px;
+}
+.tpl-tree-sidebar-2016-01-09-list .showTreeIcon{
+    width: 56px;
+    height: 100%;
+    text-align: center;
+    line-height: 21px;
+    display: inline-block;
+}
+.tpl-tree-sidebar-2016-01-09-list .removeIcon{
+    display: inline-block;
+    width: 23px;
+    position: absolute;
+    right: -2px;
+    line-height: 30px;
+    color: #A2A2A2;
+    font-family: microsoft yahei;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .treeSelectIcon ul li{
+    border-bottom: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+.tpl-tree-sidebar-2016-01-09-list .treeSelectIcon ul li span.showTreeIcon{
+    border-right: 1px solid #D9D9D9;
+    color: #929292;
+    font-size: 12px;
+    font-family: "宋体";
+}
+.tpl-tree-sidebar-2016-01-09-list .treeSelectIcon ul li.removeTreeAll{
+    border-bottom: 0;
+    background: #E2E2E2;
+    color: #8B8B8B;
+    text-align: center;
+    line-height: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+.tpl-tree-sidebar-2016-01-09-list .uploadifyBtn{
+    width: 61px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #5A5A5A;
+    color: #DDDDDD;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    line-height: 22px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.tpl-tree-sidebar-2016-01-09-list .selectIcon{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tpl-tree-sidebar-2016-01-09-list .selectNextIcon{
+    background-image: url("../images/selectNextIcon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .more1Icon{
+    background-image: url("../images/more1Icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .more2Icon{
+    background-image: url("../images/more2Icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .qianIcon1{
+    background-image: url("../images/qianzhi1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .qianIcon2{
+    background-image: url("../images/qianzhi2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .listIcon{
+    background-image: url("../images/dian.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .listIcon1{
+    background-image: url("../images/listIcon1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .listIcon2{
+    background-image: url("../images/listIcon2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .tpl-sidebar-2016-10-20-dynamic-tree ul{
+    float:left;
+    color:#ccc;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .tpl-sidebar-2016-10-20-dynamic-tree ul li{
+    float:left;
+    height:19px;
+    padding-top:1px;
+    display:inline-block;
+    border:1px solid #222;
+    background-color:#474747;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .tpl-sidebar-2016-10-20-dynamic-tree ul li.active{
+    background-color:#2c2c2c;
+    box-shadow: 0 1px 1px 0 #222 inset;
+}
+
+.tpl-tree-sidebar-2016-01-09-list .tpl-sidebar-2016-10-20-dynamic-tree .column li{
+    width:20px;
+}
+.tpl-tree-sidebar-2016-01-09-list .t-con .font-family{
+    background-image: url(../images/t-icon.png);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+    background-position-y: 0px;
+    cursor: pointer;
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+.tpl-tree-sidebar-2016-01-09-list .t-con .t-icon-weight-default {
+    background-position: 0 0;
+}
+.tpl-tree-sidebar-2016-01-09-list .t-con .t-icon-decoration-default {
+    background-position: -86px 0;
+}
+.tpl-tree-sidebar-2016-01-09-list .t-con .t-icon-weight-default.active {
+    background: url(../images/t-icon.png) -58px 0 no-repeat;
+}
+.tpl-tree-sidebar-2016-01-09-list .t-con .t-icon-decoration-default.active {
+    background: url(../images/t-icon.png) -29px 0 no-repeat;
+}

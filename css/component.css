@@ -1,0 +1,894 @@
+.tpl-component-2016-01-09-picturecarousel{
+	position:relative;
+	/* box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; */
+	border:1px solid transparent;
+	margin:auto;
+	width: 940px;
+  height: 360px;
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturecarousel-icon-bg{
+	min-height: 100px;
+	background-color: rgb(246,246,246);
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturecarousel-icon-bg .picturecarousel-icon{
+	display: inline-block;
+	width:31px;
+	height:19px;
+	background:url(../images/huandp.png) 0 0 no-repeat;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -9.5px;
+	margin-left:-15.5px;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup{
+	width:100%;
+	position:relative;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picturegroup-holder{
+	width:100%;
+	position:relative;
+	overflow: hidden;
+	
+	margin:0 auto;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder{
+	position:relative;
+	overflow: hidden;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li{
+	float:left;
+	position:relative;
+	display:inline-block;
+	width:100%;
+	overflow:hidden;
+	/* padding-bottom: 45px; */
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li>a{
+	overflow:hidden;
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li>a>img{
+	/* margin-bottom:-4.5px; */
+	position:relative;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i{
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	position:absolute;
+	bottom:0;
+	left:0;
+	cursor:pointer;
+	font-style:normal;
+	background-color:rgba(0, 0, 0, 0.26);
+	-moz-user-select: text; 
+  -webkit-user-select: text; 
+  -ms-user-select: text; 
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .title-area{
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	margin: 10px 0 10px 18px;
+	padding: 0;
+	font-family: Arial,Helvetica,微软雅黑;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .title-area a{
+	color: #fff;
+	text-decoration: none;
+}
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .title-area a:linked{
+	color: #fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .title-area a:hover{
+	color: #fff;
+}
+
+
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .content-area{
+	font-size: 12px;
+	font-style: normal;
+	color: #fff;
+	font-family: Arial,Helvetica,微软雅黑;
+  margin: 10px 0 10px 18px;
+  line-height: 20px;
+  *vertical-align: bottom;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .content-area.indent{
+  text-indent: 2em;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .content-area a{
+  text-decoration: none;
+  font-weight: normal; 
+  color: #004276;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .content-area a:linked{
+  color: #004276;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .picture-holder li i .content-area a:hover{
+  color: #d53036;
+}
+
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder{
+	position:absolute;
+  bottom: 12px;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder i{
+	float:left;
+	display: inline-block;
+	font-style:normal;
+	text-align:center;
+	margin:0 3px;
+	cursor: pointer;
+  width:12px;
+  height:12px;
+  border: 1px solid transparent;
+  *vertical-align: bottom;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.square i{
+  background-color: #fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.square i.active{
+	background-color: #c30c0c;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.e-square i{
+  
+  border-color:#fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.e-square i.active{
+  background-color: #fff;
+  border-color: transparent !important;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.rectangle i{
+  width: 16px;
+  height: 6px;
+  background-color: #fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.rectangle i.active{
+  background-color: #c30c0c;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.e-rectangle i{
+  width: 16px;
+  height: 6px;
+  border-color:#fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.e-rectangle i.active{
+  background-color: #c30c0c;
+  border-color: transparent !important;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.circle i{
+  border-radius: 50%;
+  background-color: #8d8d8d;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.circle i.active{
+  background-color: #c30c0c;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.e-circle i{
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.e-circle i.active{
+  background-color: transparent !important;
+  border-color:#d94a46;
+  border-width: 2px;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.n-square i{
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  background-color: #000;
+  color: #fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.n-square i.active{
+  background-color: #e60b11;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.n-circle i{
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  background-color: #969895;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.n-circle i.active{
+  background-color: #e60b11;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.n-e-circle i{
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  border-color:#969895;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .fast-access-holder.n-e-circle i.active{
+  background-color: #e60b11;
+  border-color: transparent !important;
+}
+
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .left-access{
+	display:inline-block;
+	position:absolute;
+	top:50%;
+	left:0;
+	cursor:pointer;
+  opacity: 0.5;
+  fliter: alpha(opacity=50);
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup:hover .left-access{
+  opacity: 1;
+  fliter: alpha(opacity=100);
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .left-access.init{
+	width:32px;
+	height:32px;
+	margin-top:-16px;
+	background:url(../images/pre-default.png) 0 0 no-repeat;
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .right-access{
+	display:inline-block;
+	position:absolute;
+	top:50%;
+	right:0;
+	cursor:pointer;
+  opacity: 0.5;
+  fliter: alpha(opacity=50);
+}
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup:hover .right-access{
+  opacity: 1;
+  fliter: alpha(opacity=100);
+}
+
+
+.tpl-component-2016-01-09-picturecarousel .picturegroup .right-access.init{
+	width:32px;
+	height:32px;
+	margin-top:-16px;
+	background:url(../images/next-default.png) 0 0 no-repeat;
+}
+
+.hide-area{
+	display:none;
+}
+
+.tpl-component-2016-01-09-picturecarousel.active{border:1px solid #08d09a;}
+.tpl-component-2016-01-09-picturecarousel.active .icon{opacity: 0.5;}
+.tpl-component-2016-01-09-picturecarousel.active .icon:hover{opacity: 1;}
+.tpl-component-2016-01-09-picturecarousel.active .copy{ position:absolute; top:0px; left:20px; background:url(../images/copy.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index: 2;}
+.tpl-component-2016-01-09-picturecarousel.active .move{ position:absolute; top:0px; left:50%; background:url(../images/move.png) 0 0 no-repeat; width:40px; height:16px; margin-left:-20px; cursor:move;z-index:2;}
+.tpl-component-2016-01-09-picturecarousel.active .move-close{ position:absolute; top:0px; left:0px; background:url(../images/move-close.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+.tpl-component-2016-01-09-picturecarousel.active .saveblock{ position:absolute; top:0px; left:40px; background:url(../images/saveblock.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+.tpl-component-2016-01-09-picturecarousel.active .saveInnerStyle{ position:absolute; top:0px; left:60px; background:url(../images/saveinnerstyle.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+
+
+
+
+.tpl-sidebar-link-target .component-radio{
+	display:inline-block;
+	width:16px;
+	height: 16px;
+	cursor: pointer;
+	position:relative;
+}
+.tpl-sidebar-link-target .component-radio .radio-checked{
+	display:inline-block;
+	width:16px;
+	height:14px;
+	position:absolute;
+	background: url(../images/cms_btn.png) no-repeat -44px 0;
+	top: 2px;
+}
+
+.tpl-sidebar-link-target .component-radio .radio-checked.active{
+	background-position: -30.5px 0;
+}
+
+.tpl-sidebar-link-target .radio-text{
+	position:relative;
+	top:-2px;
+	margin:5px;
+	cursor: pointer;
+	color:#ccc;
+}
+
+
+
+.tpl-sidebar-08-25-picturecarousel input {
+    border: 0;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #222;
+    color: #fff;
+}
+
+.tpl-sidebar-08-25-picturecarousel .section-tab-box {
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+.tpl-sidebar-08-25-picturecarousel .cmsLm {
+    height: 178px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .selectLmBtn {
+    width: 215px;
+    height: 24px;
+    margin-left: 0px;
+    margin-top: 11px;
+    border: 0;
+    color: #eee;
+    background: url(../images/cms_btn.png) no-repeat 0px -17px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tpl-sidebar-08-25-picturecarousel .redColor {
+    display: inline-block;
+    color: red;
+    vertical-align: text-top;
+}
+
+.tpl-sidebar-08-25-picturecarousel .lmBtn_block {
+    margin-left: 8px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.tpl-sidebar-08-25-picturecarousel .selectlmLi {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.tpl-sidebar-08-25-picturecarousel .selectLmImg {
+    background: url(../images/cms_btn.png) 0 0 no-repeat;
+}
+
+.tpl-sidebar-08-25-picturecarousel .selectLmImgClose {
+    background: url(../images/deleteCmsColumns.png) 0 0 no-repeat;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tpl-sidebar-08-25-picturecarousel .selectLmText {
+    vertical-align: text-bottom;
+    color: #eee;
+}
+
+.tpl-sidebar-08-25-picturecarousel .myInput_liu {
+    width: 72px;
+    height: 19px;
+    border: 1px solid #545454;
+    text-align: center;
+    background-color: #27282e;
+    color: #fff;
+}
+
+.tpl-sidebar-08-25-picturecarousel .myLable_liu {
+    color: #cccccc;
+}
+
+.tpl-sidebar-08-25-picturecarousel .myCheckBox_liu {
+    width: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tpl-sidebar-08-25-picturecarousel .checkIcon {
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 16px;
+    height: 14px;
+    background: url(../images/cms_btn.png) no-repeat -60px 0;
+}
+
+.tpl-sidebar-08-25-picturecarousel .checkIcon.active {
+    background-position: -16px 0;
+}
+
+.tpl-sidebar-08-25-picturecarousel .radioIcon {
+    cursor: pointer;
+    margin-top: 3px;
+    width: 16px;
+    height: 14px;
+    background: url(../images/cms_btn.png) no-repeat -44px 0;
+    margin-right: 10px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .radioIcon_m5 {
+    margin-right: 5px;
+    margin-left: 13px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .radioIcon.active {
+    background-position: -30px 0;
+}
+
+.tpl-sidebar-08-25-picturecarousel .float_1 {
+    margin-right: 20px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .float_2 {
+    float: left;
+    overflow: hidden;
+}
+
+.tpl-sidebar-08-25-picturecarousel .float_2 .list {
+    height: 26px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .float_label {
+    width: 55px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .checkSpan {
+    margin-right: 12px;
+    width: 50px;
+    display: inline-block;
+}
+
+.tpl-sidebar-08-25-picturecarousel .cms_gjPosStart {
+    color: #ccc;
+}
+
+.tpl-sidebar-08-25-picturecarousel .cms_gjStartInput {
+    width: 40px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+.tpl-sidebar-08-25-picturecarousel .cms_gjStartInputSmall {
+    width: 40px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+
+/*发布批次样式*/
+
+.tpl-sidebar-08-25-picturecarousel .cms_piciBox {
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.tpl-sidebar-08-25-picturecarousel .cms_piciBox .cmspiciBtn {
+    color: #333;
+    background-color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+}
+
+.tpl-sidebar-08-25-picturecarousel .cms_piciBox .cmspiciBtn.active {
+    color: #ccc;
+    background-color: #202020;
+}
+
+.tpl-sidebar-08-25-picturecarousel .clear_hidden {
+    overflow: hidden;
+}
+
+.tpl-sidebar-08-25-picturecarousel .cms_float {
+    float: left;
+}
+
+.tpl-sidebar-08-25-picturecarousel .config_mTop {
+    margin-top: 5px;
+}
+
+/*字体设置*/
+.tpl-sidebar-10-19-picturecarousel .t-icon {
+    background-image: url('../images/t-icon.png');
+    width: 28px;
+    height: 22px;
+    background-position:0 0;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .t-icon.t-icon-weight-default {
+    background-position:0 0;
+}
+
+.tpl-sidebar-10-19-picturecarousel .t-icon.t-icon-weight-default.active {
+    background-position:-58px 0;
+}
+
+.tpl-sidebar-10-19-picturecarousel .t-icon.t-icon-decoration-default {
+    background-position:-86px 0;
+}
+
+.tpl-sidebar-10-19-picturecarousel .t-icon.t-icon-decoration-default.active {
+    background-position:-29px 0;
+}
+
+/*滑动按钮*/
+.tpl-sidebar-10-19-picturecarousel .slide,.tpl-sidebar-08-25-picturecarousel .slide{
+  width:40px;
+  height:20px;
+  float:left;
+  overflow: hidden;
+  box-shadow: 0 0 1px 0 #222;
+  border:1px solid #222;
+}
+
+.tpl-sidebar-10-19-picturecarousel .slide .slide-button,.tpl-sidebar-08-25-picturecarousel .slide .slide-button{
+  width:70px;
+  height:20px;
+  overflow: hidden;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  position:relative;
+  left:-30px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .slide .slide-button i,.tpl-sidebar-08-25-picturecarousel .slide .slide-button i{
+  float:left;
+  display:inline-block;
+  height:20px;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+}
+
+.tpl-sidebar-10-19-picturecarousel .slide .slide-button .status,.tpl-sidebar-08-25-picturecarousel .slide .slide-button .status{
+  width:30px;
+  background-color:#222;
+  cursor:pointer;
+  position:relative;
+}
+
+.tpl-sidebar-10-19-picturecarousel .slide .slide-button .close i,.tpl-sidebar-08-25-picturecarousel .slide .slide-button .close i{
+  display:inline-block;
+  width:3px;
+  height:12px;
+  box-shadow: 0 0 1px 0 #2bb599;
+  background-color:#2bb559;
+  position:absolute;
+  top:4px;
+  left:13.5px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .slide .slide-button .open i,.tpl-sidebar-08-25-picturecarousel .slide .slide-button .open i{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border:1px solid #474747;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0 #474747 inset;
+  position:absolute;
+  top:5px;
+  left:10px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .slide .slide-button .split,.tpl-sidebar-08-25-picturecarousel .slide .slide-button .split{
+  width:10px;
+  background-color:#474747;
+}
+
+/*左右箭头切换样式开始*/
+
+.tpl-sidebar-2016-10-19-picturecarousel .pre-next-btn-box .w {
+    display: inline-block;
+    margin-right: 10px;
+    color: #dddddd;
+    vertical-align: middle;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .inline-block {
+    display: inline-block;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics {
+    width: 58px;
+    height: 22px;
+    border: 1px solid #222;
+    position: relative;
+    cursor: pointer;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics img {
+    height: 20px;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #eee;
+    border: 1px solid #333;
+    width: 110px;
+    text-align: center;
+    z-index: 100;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox li {
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox li:hover {
+    background: #8ae5f8;
+    opacity: .4;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox li .img-hold {
+    display: inline-block;
+    width: 58px;
+    vertical-align: -4px;
+    padding: 5px 0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox li .clear-selectpics {
+    width: 33px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox .close {
+    background: url(../images/selectprenextbtn.png) no-repeat 0 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+}
+
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-select-pics .selectBox .d-close {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .tips {
+    position: relative;
+    height: 100%;
+    background: red;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .clear-selectpics {
+    text-align: center;
+    border: 0;
+    background: #e2e2e2;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .preview {
+    width: 41px;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+    background-color: #eee;
+    color: #aaa;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .tips .tip-icon {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.tpl-sidebar-2016-10-19-picturecarousel .up-btn button {
+    background: #5a5a5a;
+    padding: 2px 1px;
+    border-radius: 5px;
+    color: #dddddd;
+    cursor: pointer;
+    border: 0;
+}
+
+/**
+ * 焦点切换下拉框
+ */
+.tpl-sidebar-10-19-picturecarousel .select-img{
+  width: 121px;
+  height: 24px;
+  border: 1px solid #545454;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 36px;
+  position: relative;
+  cursor: pointer;
+  background: url(../images/btn-icon.png) 0 0 no-repeat;
+  background-color: #27282e;
+}
+
+
+
+.tpl-sidebar-10-19-picturecarousel .select-img:after{
+  position: absolute;
+  content: '';
+  border-left: 4px solid transparent;
+  border-top: 4px solid #e9e9e9;
+  border-right: 4px solid transparent;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  right: 5px;
+  top: 10px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .select-img-options-holder{
+  width: 121px;
+  margin: 1px 0 0 36px;
+  position: relative;
+}
+
+.tpl-sidebar-10-19-picturecarousel .select-img-options{
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tpl-sidebar-10-19-picturecarousel .select-img-options.open{
+   height: 218px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option{
+  background: url(../images/btn-icon.png) 0 0 no-repeat;
+  background-color: #27282e;
+  border-style: solid;
+  border-color: #545454;
+  border-width: 1px 1px 0;
+  width:119px;
+  height: 23px;
+}
+
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option:hover{
+  background-color: #515465;
+}
+
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.square,.tpl-sidebar-10-19-picturecarousel .select-img.square{
+  background-position: 0 0;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.e-square,.tpl-sidebar-10-19-picturecarousel .select-img.e-square{
+  background-position: 0 -24px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.rectangle,.tpl-sidebar-10-19-picturecarousel .select-img.rectangle{
+  background-position: 0 -48px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.e-rectangle,.tpl-sidebar-10-19-picturecarousel .select-img.e-rectangle{
+  background-position: 0 -72px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.circle,.tpl-sidebar-10-19-picturecarousel .select-img.circle{
+  background-position: 0 -96px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.e-circle,.tpl-sidebar-10-19-picturecarousel .select-img.e-circle{
+  background-position: 0 -120px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.n-square,.tpl-sidebar-10-19-picturecarousel .select-img.n-square{
+  background-position: 0 -144px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.n-circle,.tpl-sidebar-10-19-picturecarousel .select-img.n-circle{
+  background-position: 0 -168px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.n-e-circle,.tpl-sidebar-10-19-picturecarousel .select-img.n-e-circle{
+  background-position: 0 -192px;
+}
+.tpl-sidebar-10-19-picturecarousel .select-img-options .select-img-option.n-e-circle{
+  border-bottom-width: 1px;
+}
+
+
+.tpl-sidebar-10-20-picturecarousel .sp-preview{
+  width: 24px;height: 24px;
+}
+
+
+
+
+
+.tpl-component-2016-01-09-picturecarousel.tpl-component-2016-01-09-picturecarousel-style1 .picturegroup .picture-holder li i{
+  background-color: transparent;
+}
+
+.tpl-component-2016-01-09-picturecarousel.tpl-component-2016-01-09-picturecarousel-style1 .picturegroup .picture-holder li i .title-area{
+  margin-left: 0px;
+}
+
+.tpl-component-2016-01-09-picturecarousel.tpl-component-2016-01-09-picturecarousel-style1 .picturegroup .picture-holder li i .title-area a{
+  color: #000;
+}
+
+.tpl-component-2016-01-09-picturecarousel.tpl-component-2016-01-09-picturecarousel-style1 .picturegroup .picture-holder li i .title-area a:linked{
+  color: #000;
+}
+
+.tpl-component-2016-01-09-picturecarousel.tpl-component-2016-01-09-picturecarousel-style1 .picturegroup .picture-holder li i .content-area{
+  color: #000;
+  margin-left: 0px;
+}
+

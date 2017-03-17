@@ -1,0 +1,276 @@
+.tpl-component-2016-04-11-erwm {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    width: 800px;
+    overflow: hidden;
+}
+
+.tpl-component-2016-04-11-erwm .erwm-icon-bg {
+    min-height: 100px;
+    position: relative;
+}
+
+.tpl-component-2016-04-11-erwm .erwm-icon-bg .erwm-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/huandp.png) 0 0 no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9.5px;
+    margin-left: -15.5px;
+}
+.tpl-component-2016-04-11-erwm .erwm-icon-bg .erwm-down{
+    position: absolute;
+    background: url(../images/2.png) 0 0 no-repeat;
+    width: 8px;
+    height: 4px;
+    left: 50%;
+    top: 50%;
+    margin-top: 2.5px;
+    margin-left: 26px;
+}
+.tpl-component-2016-04-11-erwm .picturegroup {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+    overflow: hidden;
+}
+
+.tpl-component-2016-04-11-erwm .picturegroup #erwm {
+    position: relative;
+    margin: 0 auto;
+}
+
+.tpl-component-2016-04-11-erwm .erwmClose{
+    width: 13px;
+    height: 13px;
+    background: url(../images/3.png) no-repeat;
+    position: absolute;
+    right: -13px;
+    top: 0;
+    cursor: pointer;
+}
+
+.tpl-component-2016-04-11-erwm .picturegroup .picture-holder {
+    height: 100%;
+}
+
+.tpl-component-2016-04-11-erwm .picturegroup .picture-holder li {
+
+    display: inline;
+    overflow: hidden;
+}
+
+.tpl-component-2016-04-11-erwm .picturegroup .picture-holder li a {
+    width: 100%;
+    display: block;
+}
+
+.tpl-component-2016-04-11-erwm.active {
+    border: 1px solid #08d09a;
+}
+
+.tpl-component-2016-04-11-erwm.active .icon {
+    opacity: 0.5;
+}
+
+.tpl-component-2016-04-11-erwm.active .icon:hover {
+    opacity: 1;
+}
+
+.tpl-component-2016-04-11-erwm.active .move {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background: url(../images/move.png) 0 0 no-repeat;
+    width: 40px;
+    height: 16px;
+    margin-left: -20px;
+    cursor: move;
+}
+
+.tpl-component-2016-04-11-erwm.active .move-close {
+    z-index: 999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../images/move-close.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.tpl-component-2016-04-11-erwm.active .copy {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background: url(../images/copy.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.tpl-component-2016-04-11-erwm.active .saveInnerStyle {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    background: url(../images/saveinnerstyle.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tpl-component-2016-04-11-erwm.active .saveblock {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    background: url(../images/saveblock.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tpl-siderbar-2016-04-11-erwm #tpl-sidebar-2016-06-06-erwmBtn label {
+    color: #ccc;
+    font-family: Arial, Helvetica, 黑体;
+    margin-right: 10px;
+}
+
+.tpl-siderbar-2016-04-11-erwm #tpl-sidebar-2016-06-06-erwmBtn .component-radio {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tpl-siderbar-2016-04-11-erwm #tpl-sidebar-2016-06-06-erwmBtn .component-radio .radio-checked.active {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #08d09a;
+    border: 1px solid #08d09a;
+    border-radius: 10px;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.tpl-siderbar-2016-04-11-erwm #tpl-sidebar-2016-06-06-erwmBtn .radio-text {
+    position: relative;
+    top: -4px;
+    margin-right: 5px;
+    font-family: 宋体;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.tpl-siderbar-2016-04-11-erwm .setup-box2 .deleteText {
+    float: left;
+    height: 24px;
+    padding-top: 1px;
+    display: inline-block;
+    border: 1px solid #222;
+    background-color: #474747;
+    text-align: center;
+    cursor: pointer;
+    width: 54px;
+    color: #ccc;
+}
+
+.tpl-siderbar-2016-04-11-erwm .setup-box2 .deleteText.active {
+    background-color: #2c2c2c;
+    box-shadow: 0 1px 1px 0 #222 inset;
+}
+
+.tpl-component-2016-04-11-erwm .bottomContent {
+    display: none;
+    box-sizing: border-box;
+}
+
+.tpl-siderbar-2016-04-11-erwm .setup-box2 .delBtn {
+    margin-bottom: 10px;
+}
+
+.tpl-component-2016-04-11-erwm .hide-area, .tpl-component-2016-04-11-erwm-data-hidden-info, .tpl-component-2016-04-11-erwm-setting-hidden-info {
+    display: none;
+}
+.tpl-component-2016-04-11-erwm-style2 .erwmClose{
+     display: none;
+}
+.tpl-component-2016-04-11-erwm-style3 .bottomContent{
+    display: block;
+}
+.tpl-component-2016-04-11-erwm-style4 .erwmClose{
+    display: none;
+}
+.tpl-component-2016-04-11-erwm-style4 .bottomContent{
+    display: block;
+}
+.tpl-component-2016-04-11-erwm .erwm-pic {
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    background: url(../images/1.jpg) no-repeat;
+    left: 406px;
+    top: 78px;
+    display: none;
+}
+.tpl-component-2016-04-11-erwm .erwm-text{
+    position: absolute;
+    bottom: -24px;
+    font-family: 宋体;
+    font-size: 16px;
+    color: #2A2A2A;
+    left: 5px;
+}
+.tpl-component-2016-04-11-erwm .erwm img{
+    border: 0;
+}
+
+
+.tpl-sidebar-link-target .component-radio{
+    display:inline-block;
+    width:16px;
+    height: 16px;
+    cursor: pointer;
+    position:relative;
+}
+.tpl-sidebar-link-target .component-radio .radio-checked{
+    display:inline-block;
+    width:16px;
+    height:14px;
+    position:absolute;
+    background: url(../images/cms_btn.png) no-repeat -44px 0;
+    top: 2px;
+}
+
+.tpl-sidebar-link-target .component-radio .radio-checked.active{
+    background-position: -30.5px 0;
+}
+
+.tpl-sidebar-link-target .radio-text{
+    position:relative;
+    top:-2px;
+    margin:5px;
+    cursor: pointer;
+    color:#ccc;
+}

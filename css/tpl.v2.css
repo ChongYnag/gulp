@@ -1,0 +1,1466 @@
+﻿/* 公共弹框的css*/
+
+@charset "utf-8";
+#commonPicUpDialogLayer_liu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+    background: #000;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    /*display: none;*/
+}
+
+#commonPicUpDialogLayer_liu.active {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu {
+    width: 750px;
+    position: fixed;
+    z-index: 301;
+    background: #fff;
+    left: 50%;
+    top: -110%;
+    margin-left: -375px;
+    margin-top: -269px;
+    /* display: none; */
+    overflow: hidden;
+}
+
+#commonPicUpDialogBox_liu.active {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    background-color: #2DCC70;
+    padding: 15px 18px 15px 25px;
+    margin: 0;
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu img.close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content {
+    padding: 20px 17px 0 25px;
+    border-bottom: #E3E3E3;
+}
+
+.tips-red {
+    margin: 5px 0;
+    color: red;
+    line-height: 22px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+#commonPicUpDialogBox_liu .content:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic {
+    float: left;
+    width: 454px;
+    height: 312px;
+    /*background-color: #eee;*/
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics {
+    float: right;
+    width: 244px;
+    height: 243px;
+    /* background-color: #eee; */
+    border: 1px solid #eee;
+    position: relative;
+    /*padding-bottom: 30px;*/
+    /* margin-top: 5px; */
+    border-top: 0;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li {
+    width: 108px;
+    height: 64px;
+    border: 1px solid #aaa;
+    margin: 5px 6px 5px 4px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li.only {
+    width: ;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li.active {
+    border: 2px solid #2DCC70;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li .bottomBox {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    background: #000;
+    width: 100%;
+    opacity: .4;
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li:hover .bottomBox {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li .bottomContent {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li:hover .bottomContent {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li img {
+    width: 100%;
+    height: 100%;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li .bottomContent span {
+    display: inline-block;
+    width: 33.33333%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics .rightImgsContentBox li .bottomContent span img {
+    width: 15px;
+    height: 15px;
+    margin-top: 9px;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics #clear {
+    position: absolute;
+    bottom: 0;
+    padding: 8px 0;
+    background-color: #eee;
+    color: #333;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .rightShowPics #clear.active {
+    background-color: #2DCC70;
+}
+
+#commonPicUpDialogBox_liu .content .gn {
+    color: #414141;
+    font-size: 14px;
+    width: 246px;
+    float: right;
+    margin-top: -3px;
+}
+
+#commonPicUpDialogBox_liu .content .gn span {
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+    /* width: 30%; */
+    text-align: center;
+    cursor: pointer;
+    /* border-bottom: 1px solid #C7C7C7; */
+    padding: 5px 0;
+    /*color: #2DCC70;*/
+    margin: 0 5px;
+}
+
+#commonPicUpDialogBox_liu .content .gn .linkAndTitle {
+    border: 1px solid #eee;
+    color: #333;
+    margin-top: 4px;
+}
+
+#commonPicUpDialogBox_liu .content .gn .linkAndTitle li {
+    border: 1px solid #eee;
+    margin: 5px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#commonPicUpDialogBox_liu .content .gn .linkAndTitle .tip {
+    display: inline-block;
+    border-right: 1px solid #eee;
+    height: 100%;
+    line-height: 32px;
+    padding-right: 5px;
+}
+
+#commonPicUpDialogBox_liu .content .gn .linkAndTitle li input {
+    width: 190px;
+    /*height: 100%;*/
+    border: 0;
+    line-height: 22px;
+    font-size: 14px;
+    outline: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicNav {
+    color: #808487;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicNav li {
+    padding: 0 8px 11px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+    margin: 0 8px 0 0;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicNav li:hover {
+    color: #2DCC70;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicNav li b {
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 302;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: #2DCC70;
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicNav li.active {
+    color: #25AF64;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicNav li.active b {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList {
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.active {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local {
+    width: 100%;
+    height: 284px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .tips {
+    width: 350px;
+    height: 150px;
+    padding: 10px 20px;
+    margin: 110px auto;
+    text-align: center;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .tips .selectBtn {
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .tips .selectBtn #dialogUploadPic1.uploadify {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: -15px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .tips .selectBtn span {
+    background: #2DCC70;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .tips .selectBtn img {
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local #upload {
+    position: relative;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local #upload #dialogUploadPic2.uploadify {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: -13px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .tips.hide {
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic {
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+    /*border-top: 1px solid #eee;*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li,
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #upload {
+    width: 80px;
+    height: 122px;
+    float: left;
+    margin: 7px 6px 5px 2px;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    color: #6f717b;
+    padding: 5px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #upload {
+    padding: 0;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic .uploadStyle {
+    border: 1px solid #9dd9ce;
+    height: 78px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li:hover {
+    background-color: #f0fbfa;
+    border: 1px solid #9dd9ce;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li:hover .localName b {
+    background-color: #f0fbfa;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li button {
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    background-color: #09b462;
+    width: 46px;
+    height: 28px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    margin-top: -14px;
+    margin-left: -23px;
+    left: 50%;
+    display: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li:hover button {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li button:hover {
+    background-color: #1D7542;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li:hover img.closeBtn {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li img.closeBtn {
+    position: absolute;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    top: -6px;
+    display: none;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li.select {
+    /*border: 2px solid #2DCC70;*/
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li.active {
+    border: 2px solid #2DCC70;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li b.close {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li img {
+    width: 64px;
+    height: 51px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li .localName {
+    width: 49px;
+    height: 55px;
+    overflow: hidden;
+    display: inline-block;
+    word-wrap: break-word;
+    line-height: 19px;
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li .localName>span {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic li .localName>span>b {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    font-weight: 100;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #upload {
+    background-color: #fff;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic {
+    background-color: #FAFBFF;
+    /* padding: 15px; */
+    border: 1px solid #eee;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+    margin: 23px auto 0;
+    /* padding-bottom: 50px; */
+    height: 260px;
+    box-sizing: border-box;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic .imgBox {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic .imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic .imgXx {
+    width: 200px;
+    text-overflow: clip;
+    height: 120px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic .imgXx {
+    word-break: break-all
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic .addOnePic {
+    text-align: center;
+    position: absolute;
+    margin-top: 30px;
+    top: 60%;
+    left: 50%;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic #addOnePic,
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic #dialogUploadPic3 {
+    background-color: #2DCC70;
+    color: #fff;
+    border: 1px solid #2DCC70;
+    margin-right: 30px;
+    position: absolute;
+    width: 160px;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 101;
+    height: 40px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.local .localUPPic #onePic #addOnePic {
+    padding: 8px 0;
+    border: 1px solid #0DBE57;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun {
+    width: 100%;
+    height: 374px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic {
+    width: 100%;
+    height: 250px;
+    /*background-color: red;*/
+    border-top: 1px solid #eee;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li {
+    width: 80px;
+    height: 88px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    float: left;
+    margin: 4px 7px 5px 1px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*显示详细信息*/
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.active {
+    border: 3px solid #2DCC70;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li img {
+    width: 65px;
+    height: 52px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic #upload {
+    background-color: #fff;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead {
+    padding: 5px;
+    /*border-top: 1px solid #eee;*/
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .yunSelect {
+    /*border: 1px solid #aaa;*/
+    width: 329px;
+    display: inline-block;
+    /* padding: 5px; */
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .yunSelectHead {
+    border: 1px solid #eee;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .yunSelecMenu {
+    color: #333;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px rgba(23, 22, 22, 0.69);
+    width: 114px;
+    position: absolute;
+    top: 100%;
+    margin-top: 4px;
+    /* padding-left: 5px; */
+    z-index: 200;
+    display: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .yunSelecMenu.active {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .yunSelecMenu li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .yunSelecMenu li:hover {
+    background-color: #aaa;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .selectAll {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 145px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .selectAll #selectAll {
+    vertical-align: middle;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .refreshYun {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunHead .refreshYun img {
+    vertical-align: middle;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunSelectHead b {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 28px;
+    background-color: #F8F8FA;
+    top: 0;
+    width: 28px;
+    text-align: center;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunSelectHead .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    margin-top: 10px;
+}
+
+#commonPicUpDialogBox_liu .sureCancelBox {
+    text-align: right;
+    padding-right: 24px;
+    /* margin-top: 19px; */
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    background-color: #FAFAFA;
+    height: 51px;
+}
+
+#commonPicUpDialogBox_liu .sureCancelBox input {
+    padding: 10px 48px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu .sureCancelBox #sure {
+    background-color: #2DCC70;
+    color: #fff;
+    border: 1px solid #2DCC70;
+    margin-right: 7px;
+}
+
+#commonPicUpDialogBox_liu .sureCancelBox #sure:hover {
+    background-color: #1D7542;
+}
+
+#commonPicUpDialogBox_liu .sureCancelBox #cancel {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    color: #aaa
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic {
+    margin: 44px 0;
+    /* border: 1px solid #2DCC70; */
+    width: 440px;
+    padding: 8px;
+    /*text-align: center;*/
+    border-radius: 4px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic h3 {
+    font-weight: normal;
+    color: #6F717B;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli {
+    /*margin: 0 0 8px 0;*/
+    /*padding: 8px;*/
+    /*border: 1px solid #2DCC70;*/
+    outline: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    outline: none;
+}
+
+#commonPicUpDialogBox_liu #addLinkToPicInput {
+    width: 375px;
+    height: 30px;
+    padding: 0;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .btn-info {
+    color: #6BA71D;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .dropdown-menu.active {
+    display: block;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .dropdown-menu>li:hover {
+    background-color: #eee;
+    color: #6BA71D;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addLinkToPicli .dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList .addLinkToPic .addSure {
+    background: #2DCC70 url(../images/addSure.png) no-repeat center center;
+    border: 1px solid #1bbd5f;
+    border-radius: 2px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    vertical-align: middle;
+}
+
+#commonPicUpDialogBox_liu .yunTip span {
+    font-family: '微软雅黑'
+}
+
+#commonPicUpDialogBox_liu .yunTip span.tip:hover {
+    /* background-color: #2DCC70; */
+    /* color: #fff; */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#commonPicUpDialogBox_liu li {
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li {
+    background-color: #fff;
+    /*border-color: #2DCC70;*/
+    cursor: pointer;
+    position: relative;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li span {
+    text-overflow: ellipsis;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    height: 22px;
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.pictrue.active,
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.file.showShadow {
+    background-color: #f0fbfa;
+    border: 1px solid #9dd9ce;
+}
+
+
+/* #commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.pictrue .showFont,
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.file .showFont {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding-top: 79px
+}
+
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.pictrue.active .showFont,
+#commonPicUpDialogBox_liu .content .selectAndUploadPic .selectAndUploadPicList.yun .yunAddPic li.file.showShadow .showFont {
+    display: block;
+} */
+
+.rightImgsContentBox li img {
+    cursor: pointer;
+}
+
+#upload {
+    position: relative;
+}
+
+#upload #dialogUploadPic2 {
+    cursor: pointer;
+    position: absolute;
+    width: 98px;
+    height: 78px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    margin-left: -20px;
+    filter: alpha(opacity=0);
+}
+
+.addOnePic {
+    position: relative;
+}
+
+.addOnePic #dialogUploadPic3 {
+    cursor: pointer;
+    position: absolute;
+    height: 35px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*width: 128px !important;*/
+}
+
+#commonPicUpDialogBox_liu #onePic .cover {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-color: rgba(10, 10, 10, 0.55);
+    background: radial-gradient(rgba(66, 66, 66, 0), rgba(105, 105, 105, 0.42), rgba(0, 0, 0, 0.65));
+    -webkit-background: -webkit-radial-gradient(rgba(66, 66, 66, 0), rgba(134, 130, 130, 0.42), rgba(0, 0, 0, 0.65));
+    -moz-background: radial-gradient(rgba(66, 66, 66, 0), rgba(134, 130, 130, 0.42), rgba(0, 0, 0, 0.65));
+    -o-background: radial-gradient(rgba(66, 66, 66, 0), rgba(134, 130, 130, 0.42), rgba(0, 0, 0, 0.65));
+    -ms-background: radial-gradient(rgba(66, 66, 66, 0), rgba(134, 130, 130, 0.42), rgba(0, 0, 0, 0.65));
+    display: none;
+    margin-top: 23px;
+}
+
+#commonPicUpDialogBox_liu #clear {
+    display: inline-block;
+    /* margin-left: 50px; */
+    float: right;
+    margin-top: 5px;
+    color: #2DCC70;
+    cursor: pointer;
+}
+
+#commonPicUpDialogBox_liu #clear:hover {
+    text-decoration: underline;
+}
+
+
+/*公共的栏目选择样式开始*/
+
+#cmsColumnsBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: .5;
+    background-color: #333;
+    left: 0;
+    top: 0;
+}
+
+#cmsColumns {
+    position: absolute;
+    width: 750px;
+    //height: 450px;
+    left: 50%;
+    top: 50%;
+    margin-left: -375px;
+    margin-top: -294px;
+    background-color: #fff;
+    z-index: 10;
+    opacity: 0;
+   display: none;
+}
+
+#cmsColumns .head {
+    font-size: 20px;
+    color: #fff;
+    background-color: #2dcc70;
+    padding: 12px 20px 12px 20px;
+}
+
+#cmsColumns .closeImg {
+    cursor: pointer;
+    float: right;
+}
+
+#cmsColumns .contentBoxColumns {
+    padding: 0 25px 20px 25px;
+}
+
+#cmsColumns .content {
+    padding: 10px;
+    height: 367px;
+}
+
+#cmsColumns .bottom {
+    height: 40px;
+    padding: 9px;
+    border-top: 1px solid #e3e9ef;
+    background-color: #fafafa;
+    text-align: right;
+}
+
+#cmsColumns .bottom button {
+    width: 128px;
+    height: 39px;
+    font-size: 14px;
+    margin-right: 30px;
+    cursor: pointer;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+}
+
+#cmsColumns .bottom button#sure {
+    background-color: #2dcc70;
+    border: 1px solid #1bbd5f;
+    color: #fff;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#cmsColumns .bottom button#sure:hover {
+    background-color: #23a359;
+}
+
+#cmsColumns .bottom button#cancel {
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    color: #585858;
+}
+
+#cmsColumns .bottom button#cancel:hover {
+    background-color: #d0caca;
+}
+
+
+/* --------------------风格弹框样式----------------------------------- */
+
+.cover {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.cover.hide {
+    display: none;
+}
+
+.style-tip {
+    text-align: center;
+    width: 150px;
+    position: fixed;
+    margin-left: -75px;
+    z-index: 12;
+    left: 50%;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 12px;
+    top: -30px;
+    background-color: #ff3c00;
+    -webkit-transition: width ease-in .1s;
+    -webkit-transition: all ease-in .1s;
+    transition: all ease-in .1s;
+}
+
+.style-tip.show {
+    top: 0px;
+}
+
+.style-preview-box {
+    width: 1090px;
+    /*background-color: red;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -545px;
+    -webkit-transition: width ease-in .3s;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+    z-index: 11;
+    top: 0;
+}
+
+.style-preview-box.hide {
+    display: none;
+}
+
+.style-preview-box.scale0 {
+    display: none;
+}
+
+.style-preview-box.scale1 {
+    display: block;
+}
+
+.style-preview-box .item {
+    padding: 10px 12px 10px 12px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    width: 495px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    position: relative;
+    margin-right: 9px;
+    margin-left: 9px;
+    margin-top: 22px;
+}
+
+.style-preview-box .item .pic-preview {
+    text-align: center;
+    height: 180px;
+    background: url(../images/aa.jpg) no-repeat center center/contain;
+}
+
+.style-preview-box .item .icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    line-height: 75px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 52px;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    cursor: pointer;
+}
+
+.style-preview-box .item .icon.del {
+    background-color: #f76133;
+    margin-right: 38px;
+}
+
+.style-preview-box .item .icon.del:hover {
+    background-color: #f99373;
+}
+
+.style-preview-box .item .icon.selectbtn {
+    background-color: #009788;
+}
+
+.style-preview-box .item .icon.selectbtn:hover {
+    background-color: #07c1ae;
+}
+
+.style-preview-box .item:hover,
+.style-preview-box .item.selectbtn {
+    background-color: #666666;
+    color: #fff;
+}
+
+
+/* 如果是系统风格就不支持删除 */
+
+.style-preview-box .item .icon.del.delfalse,
+.style-preview-box .item .icon.del.delfalse:hover {
+    background-color: #666666;
+    cursor: auto;
+    display: none;
+}
+
+.style-preview-box .item:hover .icon {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* 退出风格管理 */
+
+.exit {
+    /* margin: 23px 0; */
+    background: #ff3c00;
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+    /* width: 131px; */
+    line-height: 22px;
+    float: right;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.exit img {
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+    border-radius: 50%;
+    margin-left: 14px;
+    margin-right: 5px;
+}
+
+.exit img:hover {
+    -webkit-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+}
+
+
+/* 搜索框 */
+
+.searchbox {
+    padding: 5px;
+    background: #393939;
+    display: inline-block;
+    border: 1px solid #5f5f5f;
+    color: #aaa;
+    width: 210px;
+}
+
+.searchbox .search {
+    display: inline-block;
+    background: none;
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+.exit .search:focus {
+    -webkit-transition: all linear .3s;
+    transition: all linear .3s;
+    border-color: rgba(141, 39, 142, .75);
+    box-shadow: 0 0 18px rgba(111, 1, 32, 3);
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/* 搜索按钮 */
+
+.serch-icon {
+    background: url(../images/search.png) no-repeat center center/24px;
+    display: block;
+    float: right;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+/* 退出风格管理结束 */
+
+
+/*标示当前组件选中*/
+
+.flag {
+    background: url(../images/currselect.png) no-repeat center center/cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -13px;
+    top: -13px;
+    -webkit-animation: scale1 .2s;
+    animation: scale1 .2s;
+    /*animation-fill-mode : none | forwards | backwards | both;*/
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.flag.close {
+    -webkit-animation: scale0 .2s;
+    animation: scale0 .2s;
+    /*animation-fill-mode : none | forwards | backwards | both;*/
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scale0 {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        display: none;
+    }
+}
+
+@keyframes scale0 {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@-webkit-keyframes scale1 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    80% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale1 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    80% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/*底部文字开始*/
+
+.style-preview-box .bottom {
+    text-align: left;
+    padding: 14px 0 20px 22px;
+}
+
+.style-preview-box .bottom .title {
+    display: inline-block;
+    max-width: 397px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.style-preview-box .bottom .look {
+    float: right;
+    padding-left: 23px;
+    height: 16px;
+    line-height: 16px;
+    background: url(../images/look.png) no-repeat -2px -5px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+.style-preview-box .item:hover .look {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/*底部文字结束*/
+
+
+/* 点击查看预览 */
+
+.fengge-preview {
+    position: fixed;
+    z-index: 12;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #aaa;
+    margin-left: -500px;
+    margin-top: -250px;
+    background: rgba(0, 0, 0, .8);
+    left: 50%;
+    top: 50%;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+    overflow: hidden;
+}
+
+.fengge-preview.hide {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    display: none;
+}
+
+/*checkbox 样式*/
+.tk-checkbox-icon{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+	background: url(../images/checkbox0.png);
+	cursor: pointer;
+	vertical-align: text-bottom;
+}
+.tk-checkbox-icon.active {
+    background: url(../images/checkbox1.png);
+}
+/*删除选中的稿件icon*/
+.tk-delete-icon {
+    cursor: pointer;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url(../images/delete.jpg) no-repeat center center/16px;
+    margin-top: 4px;
+}
+.tk-delete-icon.fg-delete{
+	background-image: url(../images/right_close.png);
+}
+.tk-delete-icon:hover {
+    background-image: url(../images/delete_hover.jpg);
+}
+.scroll-select-list .mCSB_container li .tk-delete-icon{
+	position: absolute;
+    right: 9px;
+}
+.ztree-jt {
+    position: absolute;
+    display: none;
+    position: absolute;
+    left: 473px;
+    top: 281px;
+    width: 13px;
+    height: 24px;
+    cursor: pointer;
+    background: url(../images/tk_right.png) no-repeat center center/ 13px;
+}
+.tk-closedo{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    display:inline-block;
+    background: url(../images/tk_close_icon.png) no-repeat center center/ 16px;
+    display:none;
+}
+.tk-closedo:hover{
+    background: url(../images/tk_close_hover_icon.png) no-repeat center center/ 16px;
+}

@@ -1,0 +1,185 @@
+.cke_textarea_inline {
+    padding: 10px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid gray;
+    -webkit-appearance: textfield;
+}
+
+.tpl-component-2015-12-30-text {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    position: relative;
+    vertical-align: middle;
+    line-height: normal;
+    min-height: 60px;
+}
+
+.tpl-component-2015-12-30-text ul {
+    list-style: disc!important;
+    padding-left: 20px;
+}
+.tpl-component-2015-12-30-text a:hover{
+    color: #230202!important;
+}
+.tpl-component-2015-12-30-text a:hover span{
+    color: #230202!important;
+}
+.tpl-component-2015-12-30-text .box {
+    width: 100%;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.tpl-component-2015-12-30-text.active {
+    border: 1px solid #08d09a;
+}
+
+.tpl-component-2015-12-30-text.active .icon {
+    opacity: 0.5;
+}
+
+.tpl-component-2015-12-30-text.active .icon:hover {
+    opacity: 1;
+}
+
+.tpl-component-2015-12-30-text.active .saveblock {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    background: url(../images/saveblock.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tpl-component-2015-12-30-text.active .copy {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background: url(../images/copy.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tpl-component-2015-12-30-text.active .move {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background: url(../images/move.png) 0 0 no-repeat;
+    width: 40px;
+    height: 16px;
+    margin-left: -20px;
+    cursor: move;
+    z-index: 2;
+}
+
+.tpl-component-2015-12-30-text.active .move-close {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../images/move-close.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tpl-component-2015-12-30-text.active .saveInnerStyle {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    background: url(../images/saveinnerstyle.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sidebar-text .select-component-self.input .select-options {
+    right: 4px!important;
+}
+
+.select-component-self .select-holder .select-icon {
+    margin-right: 0;
+}
+
+.tpl-component-2015-12-30-text-setting-hidden-area {
+    display: none;
+}
+
+
+/* 显示隐藏边框 */
+
+.tpl-config-2015-12-30-text .zoom {
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 1px 0 #222;
+    border: 1px solid #222;
+    display: inline-block;
+    float: left;
+    margin: 10px 0 0 12px;
+}
+
+.tpl-config-2015-12-30-text .zoom .zoom-button {
+    width: 70px;
+    height: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    left: -30px;
+}
+
+.tpl-config-2015-12-30-text .zoom .zoom-button i {
+    float: left;
+    display: inline-block;
+    height: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.tpl-config-2015-12-30-text .zoom .zoom-button .status {
+    width: 30px;
+    background-color: #222;
+    cursor: pointer;
+    position: relative;
+}
+
+.tpl-config-2015-12-30-text .zoom .zoom-button .close i {
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    box-shadow: 0 0 1px 0 #2bb599;
+    background-color: #2bb559;
+    position: absolute;
+    top: 4px;
+    left: 13.5px;
+}
+
+.tpl-config-2015-12-30-text .zoom .zoom-button .open i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #474747;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 #474747 inset;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.tpl-config-2015-12-30-text .zoom .zoom-button .split {
+    width: 10px;
+    background-color: #474747;
+}
+
+.tpl-config-2015-12-30-text #transmark {
+    display: none;
+}

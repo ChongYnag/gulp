@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**下面若是还原的话，直接填写将下面的改成    *   */
+body,
+html,
+.sidebar-body,
+.sidebar-body *,
+.sidebar-panel-body,
+.sidebar-panel-body *,
+.tpl-edit-popup-window,
+.tpl-component-2016-01-09-list{
+  margin: 0;
+  padding: 0;
+  font: 12px "微软雅黑",Arial, Helvetica, sans-serif;
+  outline:none;
+}
+/*
+去除input 在ie10 下面的叉号；
+*/
+input::-ms-clear {
+        display: none;
+    }
+*:focus {outline: none;}
+/**下面这样写的用途是其对中间区域的内容不影响**/
+html,body{ height:100%; min-height:100%; max-height:100%;}
+body, 
+.sidebar-body h1,.sidebar-panel-body h1,
+.sidebar-body h2,.sidebar-panel-body h2,
+.sidebar-body h3,.sidebar-panel-body h3,.tpl-edit-popup-window h3,
+.sidebar-body h4,.sidebar-panel-body h4,
+.sidebar-body h5,.sidebar-panel-body h5,
+.sidebar-body h6,.sidebar-panel-body h6,
+.sidebar-body hr,.sidebar-panel-body hr, 
+p, 
+.sidebar-body blockquote,.sidebar-panel-body blockquote, 
+.sidebar-body dl,.sidebar-panel-body dl,
+.sidebar-body dt,.sidebar-panel-body dt,
+.sidebar-body dd,.sidebar-panel-body dd, 
+ul,
+.sidebar-body ol,.sidebar-panel-body ol, 
+li,
+.sidebar-body pre,.sidebar-panel-body pre, 
+.sidebar-body form,.sidebar-panel-body form,
+.sidebar-body fieldset,.sidebar-panel-body fieldset,
+.sidebar-body legend,.sidebar-panel-body legend,
+.sidebar-body button,.sidebar-panel-body button,
+.sidebar-body input,.sidebar-panel-body input,
+.sidebar-body textarea,.sidebar-panel-body textarea,
+.sidebar-body th,.sidebar-panel-body th,
+.sidebar-body td,.sidebar-panel-body td,
+.tpl-component-2016-01-09-list
+{
+    margin: 0;
+    padding: 0;
+}
+#workspace-body{
+	font-family: '宋体'
+}
+ul, ol {
+    list-style: outside none none;
+}
+
+/**下面的样式用于控制showLoading的样式**/
+.loading-indicator {
+	height: 80px;
+	width: 80px;
+	background: url( '../images/showLoading/loading.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.loading-indicator-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+/*变为灰色不可编辑状态*/
+.no-edit{
+	color: #666!important;
+}
+.high-light{
+	border: 1px solid #498DFC!important;
+}
+.high-light-hover{
+	border: 1px solid #498DFC!important;
+}
+.high-light-eara:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background-color: #498DFC;
+	opacity: .6;
+}
+
+a{text-decoration:none;}
+img{border:none;}
+
+.cke_contents_ltr blockquote {
+    padding-left: 20px;
+    padding-right: 8px;
+    border-left-width: 5px;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 2px 0;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0;
+}

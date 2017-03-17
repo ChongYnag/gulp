@@ -1,0 +1,733 @@
+.tpl-component-2016-09-28-manuscriptlist {
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  border: 1px solid transparent;
+  background-color: transparent;
+  position: relative; 
+  width: 360px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+}
+
+
+.tpl-component-2016-09-28-manuscriptlist.active{border:1px solid #08d09a;}
+.tpl-component-2016-09-28-manuscriptlist.active .icon{opacity: 0.5;}
+.tpl-component-2016-09-28-manuscriptlist.active .icon:hover{opacity: 1;}
+.tpl-component-2016-09-28-manuscriptlist.active .copy{ position:absolute; top:0px; left:20px; background:url(../images/copy.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index: 2;}
+.tpl-component-2016-09-28-manuscriptlist.active .move{ position:absolute; top:0px; left:50%; background:url(../images/move.png) 0 0 no-repeat; width:40px; height:16px; margin-left:-20px; cursor:move;z-index:2;}
+.tpl-component-2016-09-28-manuscriptlist.active .move-close{ position:absolute; top:0px; left:0px; background:url(../images/move-close.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+.tpl-component-2016-09-28-manuscriptlist.active .saveblock{ position:absolute; top:0px; left:40px; background:url(../images/saveblock.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+.tpl-component-2016-09-28-manuscriptlist.active .saveInnerStyle{ position:absolute; top:0px; left:60px; background:url(../images/saveinnerstyle.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;z-index:2;}
+
+
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript {
+  width: 100%;
+  float: left;
+  border-bottom: 1px dotted transparent;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-main{
+  width: 100%;
+  height: 100px;
+  position:relative;
+  overflow: hidden;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .img-holder{
+  display: inline-block;
+  width: 36%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .img-holder a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .img-holder img{
+  position: relative;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-holder{
+  display: inline-block;
+  width: 64%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-holder .content{
+  font-size: 12px;
+  font-family: Arial,Helvetica,微软雅黑;
+  word-wrap: break-word; 
+  word-break: normal; 
+  color: #5f5f5f;
+  line-height: 20px;
+  margin-left: 10px;
+  *vertical-align: bottom;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-holder .content.indent{
+  text-indent: 2em;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-holder .content a{
+  text-decoration: none;
+  font-weight: normal; 
+  color: #004276;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-holder .content a:linked{
+  color: #004276;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .content-holder .content a:hover{
+  color: #d53036;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .title-main{
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px dotted transparent;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .title-main .title {
+  font-size: 16px;
+  font-weight: normal; 
+  cursor: pointer;
+  font-family: Arial,Helvetica,微软雅黑;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  *vertical-align: bottom;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .title-main .title a{
+  text-decoration: none;
+  color: #c97c7f;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .title-main .title a:linked{
+  color: #c97c7f;
+}
+
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .title-main .title a:hover{
+  color: #f1d5a5;
+}
+
+.tpl-component-2016-09-28-manuscriptlist .manuscriptlist .manuscript .title-main .subtitle{
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial,Helvetica,微软雅黑;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  display: none;
+  line-height: 20px;
+  *vertical-align: bottom;
+}
+
+
+/*滑动按钮*/
+.tpl-sidebar-2016-10-08-manuscriptlist .slide{
+  width:40px;
+  height:20px;
+  float:left;
+  overflow: hidden;
+  box-shadow: 0 0 1px 0 #222;
+  border:1px solid #222;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .slide .slide-button{
+  width:70px;
+  height:20px;
+  overflow: hidden;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  position:relative;
+  left:-30px;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .slide .slide-button i{
+  float:left;
+  display:inline-block;
+  height:20px;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .slide .slide-button .status{
+  width:30px;
+  background-color:#222;
+  cursor:pointer;
+  position:relative;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .slide .slide-button .close i{
+  display:inline-block;
+  width:3px;
+  height:12px;
+  box-shadow: 0 0 1px 0 #2bb599;
+  background-color:#2bb559;
+  position:absolute;
+  top:4px;
+  left:13.5px;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .slide .slide-button .open i{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border:1px solid #474747;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0 #474747 inset;
+  position:absolute;
+  top:5px;
+  left:10px;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .slide .slide-button .split{
+  width:10px;
+  background-color:#474747;
+}
+
+/*单选按钮*/
+.tpl-sidebar-link-target .component-radio{
+  display:inline-block;
+  width:16px;
+  height: 16px;
+  cursor: pointer;
+  position:relative;
+}
+.tpl-sidebar-link-target .component-radio .radio-checked{
+  display:inline-block;
+  width:16px;
+  height:14px;
+  position:absolute;
+  background: url(../images/cms_btn.png) no-repeat -44px 0;
+  top: 2px;
+}
+
+.tpl-sidebar-link-target .component-radio .radio-checked.active{
+  background-position: -30px 0;
+}
+
+.tpl-sidebar-link-target .radio-text{
+  position:relative;
+  top:-2px;
+  margin:5px;
+  font-family: '宋体';
+  cursor: pointer;
+  color:#fff;
+}
+
+/*动态组件*/
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist input {
+    border: 0;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #222;
+    color: #fff;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .section-tab-box {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cmsLm {
+    height: 178px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .selectLmBtn {
+    width: 215px;
+    height: 24px;
+    margin-left: 0px;
+    margin-top: 11px;
+    border: 0;
+    color: #eee;
+    background: url(../images/cms_btn.png) no-repeat 0px -17px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .redColor {
+    display: inline-block;
+    color: red;
+    vertical-align: text-top;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .lmBtn_block {
+    margin-left: 8px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .selectlmLi {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .selectLmImg {
+    background: url(../images/cms_btn.png) 0 0 no-repeat;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .selectLmImgClose {
+    background: url(../images/deleteCmsColumns.png) 0 0 no-repeat;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .selectLmText {
+    vertical-align: text-bottom;
+    color: #eee;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .myInput_liu {
+    width: 72px;
+    height: 19px;
+    border: 1px solid #545454;
+    text-align: center;
+    background-color: #27282e;
+    color: #fff;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .myLable_liu {
+    color: #cccccc;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .myCheckBox_liu {
+    width: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .checkIcon {
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 16px;
+    height: 14px;
+    background: url(../images/cms_btn.png) no-repeat -60px 0;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .checkIcon.active {
+    background-position: -16px 0;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .radioIcon {
+    cursor: pointer;
+    margin-top: 3px;
+    width: 16px;
+    height: 14px;
+    background: url(../images/cms_btn.png) no-repeat -44px 0;
+    margin-right: 5px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .radioIcon_m5 {
+    margin-right: 5px;
+    margin-left: 13px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .radioIcon.active {
+    background-position: -30px 0;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .float_1 {
+    margin-right: 20px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .float_2 {
+    float: left;
+    overflow: hidden;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .float_2 .list {
+    height: 26px;
+    float: left;
+    margin-right: 5px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .float_label {
+    width: 32px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .checkSpan {
+    margin-right: 12px;
+    width: 50px;
+    display: inline-block;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_gjPosStart {
+    color: #ccc;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_gjStartInput {
+    width: 40px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_gjStartInputSmall {
+    width: 40px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+
+/*发布批次样式*/
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_piciBox {
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_piciBox .cmspiciBtn {
+    color: #333;
+    background-color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_piciBox .cmspiciBtn.active {
+    color: #ccc;
+    background-color: #202020;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .clear_hidden {
+    overflow: hidden;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .cms_float {
+    float: left;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist .config_mTop {
+    margin-top: 5px;
+}
+
+
+
+/*列数*/
+.tpl-sidebar-2016-10-20-dynamic-manuscriptlist ul{
+  float:left;
+  color:#ccc;
+}
+
+.tpl-sidebar-2016-10-20-dynamic-manuscriptlist ul li{
+  float:left;
+  height:19px;
+  padding-top:1px;
+  display:inline-block;
+  border:1px solid #222;
+  background-color:#474747;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tpl-sidebar-2016-10-08-dynamic-manuscriptlist ul li.active{
+  background-color:#2c2c2c;
+  box-shadow: 0 1px 1px 0 #222 inset;
+}
+
+.tpl-sidebar-2016-10-20-dynamic-manuscriptlist .column li{  
+  width:20px; 
+}
+
+
+/*字体设置*/
+.tpl-sidebar-2016-10-08-manuscriptlist .t-icon {
+    background-image: url('../images/t-icon.png');
+    width: 28px;
+    height: 22px;
+    background-position:0 0;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .t-icon.t-icon-weight-default {
+    background-position:0 0;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .t-icon.t-icon-weight-default.active {
+    background-position:-58px 0;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .t-icon.t-icon-decoration-default {
+    background-position:-86px 0;
+}
+
+.tpl-sidebar-2016-10-08-manuscriptlist .t-icon.t-icon-decoration-default.active {
+    background-position:-29px 0;
+}
+
+.tpl-sidebar-2017-01-16-manuscriptlist .manuscript-button-holder{
+  height: 60px;
+}
+
+.tpl-sidebar-2017-01-16-manuscriptlist .manuscript-button-holder .manuscript-button{
+  width: 214px;
+  height: 24px;
+  border: 1px solid #141414;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  border-radius: 5px;
+  color: #ddd;
+  background-color: #5a5a5a;
+  margin:18px 11.5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 0 #919191 inset;
+}
+
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript{
+  position:relative;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  height: 25px;
+  width: 100%;
+  display:inline-block;
+  border-style: solid;
+  border-color: #16171c;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  color: #fff;
+}
+
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript:first-child{
+  border-top-width: 1px;
+}
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript .content{
+  padding-left:15px;
+  margin: 0;
+  display:inline-block;
+  width:15em;
+  height:23px;
+  line-height: 23px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  position:relative;
+  cursor: pointer;
+}
+
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript .o-icon{
+  position:absolute;
+  right:5px;
+  display: inline-block;
+  width: 42px;
+  height: 15px;
+  top: 5px;
+}
+
+
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript .o-icon .operate{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript .o-icon .operate.upload{
+  background: url('../images/upload.png') 0 0 no-repeat;
+}
+
+
+.tpl-sidebar-2017-01-16-manuscriptlist #manuscriptList .manuscript .o-icon .operate.del{
+  background: url('../images/deleteCmsColumns.png') 0 0 no-repeat;
+}
+
+
+/*风格*/
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style1 .manuscriptlist .manuscript .title-main .title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style1 .manuscriptlist .manuscript .title-main .title a{
+  color: #004276;
+}
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style1 .manuscriptlist .manuscript .title-main .title a:linked{
+  color: #004276;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style1 .manuscriptlist .manuscript .content-main{
+  height: 65px;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style1 .manuscriptlist .manuscript .content-holder .content{
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin-left: 0px;
+}
+
+
+
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style2 .manuscriptlist .manuscript .title-main .title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.hide-area{display: none;}
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style2 .manuscriptlist .manuscript .title-main .title a{
+  color: #c92027;
+}
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style2 .manuscriptlist .manuscript .title-main .title a:linked{
+  color: #c92027;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style2 .manuscriptlist .manuscript .title-main .subtitle {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style2 .manuscriptlist .manuscript .content-main{
+  height: 65px;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style2 .manuscriptlist .manuscript .content-holder .content{
+  color: #333;
+  margin-left: 0px;
+  /* margin-top: 10px; */
+}
+
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style3{
+  width: 720px;
+}
+
+.tpl-component-2016-09-28-manuscriptlist.tpl-component-2016-09-28-manuscriptlist-style4{
+  width: 990px;
+}
+
+/*确认框*/
+.tpl-sidebar-manuscriptlist-box.confirm-box{
+  width: 573px;
+  height: 295px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -147.5px;
+  margin-left: -286.5px;
+  z-index: 9999;
+  display: none;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-head{
+  width: 100%;
+  height: 47px;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  line-height: 47px;
+  background-color: #2dcc70;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 20px;
+
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-head .confirm-close{
+  background: url(../images/dialog_close.png) no-repeat;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-foot{
+  height: 63px;
+  line-height: 63px;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #e6e6e6;
+  width: 100%;
+  background-color: #fff;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-foot button{
+  width: 126px;
+  height: 41px;
+  top: 11px;
+  position: absolute;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .5s linear;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-foot button.confirm-ok{
+  right: 194px;
+  background-color: #2dcc70;
+  color: #fff;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-foot button.confirm-ok:hover{
+  background-color: #23a359;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-foot button.confirm-cancel{
+  right: 38px;
+  background-color: #fff;
+  border: 1px solid #cbcbcb;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-foot button.confirm-cancel:hover{
+  background-color: #d0caca;
+}
+
+.tpl-sidebar-manuscriptlist-box.confirm-box .confirm-body{
+  text-align: center;
+  font-size: 16px;
+  height: 185px;
+  line-height: 150px;
+  color: #565e68;
+  background-color: #fff;
+}
